@@ -1,0 +1,25 @@
+.paginated{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.num{
+    background-color: #be9e7af4;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px;
+    font-weight: 600;
+    box-shadow: 1px 3px 8px 0 black;
+}
+
+.num:hover{
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    background: rgba(203, 165, 39, 0.871);
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 0 rgb(60, 60, 60);
+}
