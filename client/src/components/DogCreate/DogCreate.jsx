@@ -25,11 +25,7 @@ const validate = (input, dogs) => {
     errors.life_span =
       "Este dato es incorrecto... No se permiten caracteres especiales o letras";
   }
-  if (
-    !/^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/.test(
-      input.image
-    )
-  ) {
+  if (!/(https?:\/\/.*\.(?:png|jpg|jpeg))/i.test(input.image)) {
     errors.image =
       "Solo se permiten URL's. En caso de estar vacío se pondrá una imagen predeterminada.";
   }
