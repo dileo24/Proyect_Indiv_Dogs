@@ -135,7 +135,7 @@ export default function DogCreate() {
           </div>
 
           <div className={style.info}>
-            <label>Altura Promedio: </label>
+            <label>Altura Promedio (cm): </label>
             <input
               type="number"
               value={input.height}
@@ -149,7 +149,7 @@ export default function DogCreate() {
           </div>
 
           <div className={style.info}>
-            <label>Peso Promedio: </label>
+            <label>Peso Promedio (kg): </label>
             <input
               type="number"
               value={input.weight}
