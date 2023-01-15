@@ -15,7 +15,7 @@ server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://pidileo.vercel.app'); //cuando hago el deploy cualquier URL que realice peticiones HTTP lo va a hacer sin problemas
+  res.header('Access-Control-Allow-Origin', '*'); //cuando hago el deploy cualquier URL que realice peticiones HTTP lo va a hacer sin problemas
   res.header('Access-Control-Allow-Credentials', 'true');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
