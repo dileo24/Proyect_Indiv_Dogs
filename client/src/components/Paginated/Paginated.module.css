@@ -18,14 +18,14 @@
 .num {
   background-color: #be9e7af4;
   border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   width: auto;
-  /* padding: 7px; */
   width: 35px;
   height: 35px;
   justify-content: center;
-
   font-weight: 600;
   box-shadow: 1px 3px 8px 0 black;
   margin-bottom: 1rem;
