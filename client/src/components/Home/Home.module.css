@@ -114,6 +114,7 @@
   }
   .loadingHome {
     width: 90%;
+    margin-left: 20px;
   }
   .loadingHome img {
     margin-top: 40px;
