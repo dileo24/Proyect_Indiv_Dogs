@@ -110,7 +110,7 @@ export default function DogCreate() {
   };
 
   return (
-    <div>
+    <div className={style.divProd}>
       <div>
         <Link to="/home">
           <button className={style.button}>Volver al inicio</button>

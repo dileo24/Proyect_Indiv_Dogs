@@ -1,3 +1,8 @@
+.divProd {
+  background: url("../../img/background_general.jpg");
+  height: 100vh;
+}
+
 .form {
   display: inline-block;
   border: 2px solid rgba(53, 17, 17, 0.524);
@@ -35,6 +40,7 @@
   display: flex;
   border: 2px solid rgba(0, 0, 0, 0.289);
   width: 165px;
+  padding: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -58,18 +64,22 @@
   );
   margin-bottom: 40px;
   margin-top: 20px;
+  padding: 15px;
 }
 
 .button:hover {
   transition: all 0.5s ease;
-  padding: 8px 15px;
+  /* padding: 8px 15px; */
   background: (rgba(173, 141, 25, 0.676), rgba(115, 52, 83, 0.749));
   border-radius: 10px;
   box-shadow: 1px 2px 50px rgba(196, 196, 29, 0.556);
 }
+.form select {
+  padding: 10px;
+}
 
 .temps {
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -100,8 +110,33 @@
 
 .x:hover {
   transition: all 0.3s ease;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   background: (rgba(173, 141, 25, 0.676), rgba(115, 52, 83, 0.749));
   border-radius: 10px;
   box-shadow: 1px 2px 50px rgba(196, 196, 29, 0.556);
+}
+
+@media screen and (max-width: 768px) {
+  .divProd {
+    background: rgb(209, 186, 158);
+    height: 160vh;
+  }
+
+  .form {
+    width: 95%;
+    height: 83%;
+  }
+
+  .temps {
+    margin-top: -35px;
+    height: 40%;
+  }
+
+  .temp {
+    height: 70px;
+  }
+  .x {
+    position: relative;
+    top: -20%;
+  }
 }

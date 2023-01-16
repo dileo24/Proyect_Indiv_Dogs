@@ -1,36 +1,52 @@
 .b {
-    display: inline-block;
-    background-color: #be9e7af4;
-    font-weight: 600;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.313);
-    border: 1px solid rgba(0, 0, 0, 0.289);
-    font-weight: 800;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 150px;
-    border: 1px solid black;
-    margin-top: 10px;
+  display: inline-block;
+  background-color: #be9e7af4;
+  font-weight: 600;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.313);
+  border: 1px solid rgba(0, 0, 0, 0.289);
+  font-weight: 800;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 150px;
+  border: 1px solid black;
+  margin-top: 10px;
 }
 .b:hover {
-    transition: all 0.3s ease;
-    padding: 0px 10px;
-    background: rgba(203, 165, 39, 0.871);
-    box-shadow: 1px 2px 10px 0 rgb(60, 60, 60);
+  transition: all 0.3s ease;
+  padding: 0px 10px;
+  background: rgba(203, 165, 39, 0.871);
+  box-shadow: 1px 2px 10px 0 rgb(60, 60, 60);
 }
 
 .loading {
-    height: 800px;
-    width: 700px;
-    font-size: 30px;
-    background-color: #7a654d98;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.313);
-    border: 1px solid rgba(0, 0, 0, 0.289);
+  height: 800px;
+  width: 700px;
+  font-size: 30px;
+  background-color: #7a654d98;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.313);
+  border: 1px solid rgba(0, 0, 0, 0.289);
 }
 
 .loading h3 {
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.599);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.599);
 }
 
 .loading p {
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.599);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.599);
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    margin-top: 10px;
+    height: 30px;
+  }
+  .b {
+    width: 35%;
+    height: 35px;
+  }
+  .divGeneral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

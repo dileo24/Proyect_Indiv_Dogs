@@ -16,7 +16,7 @@ export default function Detail(props) {
 
   const dogDetail = useSelector((state) => state.detail); //traigo el estado detail del reducer
   return (
-    <div>
+    <div className={style.divDet}>
       <div>
         <Link to="/home">
           <button className={style.button}>Volver</button>
@@ -26,20 +26,20 @@ export default function Detail(props) {
         <div className={style.detailText}>
           <h1>{dogDetail[0].name}</h1>
           <div className={style.info}>
-            <h4>
+            <p>
               Altura Promedio:
               <br />
               {dogDetail[0].height} cm
-            </h4>
-            <h4>
+            </p>
+            <p>
               Peso Promedio:
               <br /> {dogDetail[0].weight} kg
-            </h4>
-            <h4>
+            </p>
+            <p>
               Años de vida:
               <br />
               {dogDetail[0].life_span}
-            </h4>
+            </p>
           </div>
           <h3>Temperamentos: {dogDetail[0].temperament}</h3>
           <img
@@ -49,7 +49,7 @@ export default function Detail(props) {
           ></img>
         </div>
       ) : (
-        <div className={style.loading}>
+        <div className={style.loadingDet}>
           <h3>Loading...</h3>
           <p>¡Estamos trabajando para encontrar la raza!</p>
           <p>En caso de no cargar, corrobore que exista.</p>
