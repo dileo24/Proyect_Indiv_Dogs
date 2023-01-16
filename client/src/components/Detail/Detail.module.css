@@ -81,7 +81,7 @@
   .info {
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 40%;
     font-weight: bold;
   }
   .detailText {
@@ -93,7 +93,7 @@
     height: 25%;
   }
   .loadingDet {
-    height: 70%;
+    height: 80%;
     width: 90%;
   }
   .loadingDet img {

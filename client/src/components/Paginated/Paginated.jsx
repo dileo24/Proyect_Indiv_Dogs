@@ -13,10 +13,12 @@ export default function Paginated({ dogsPerPage, allDogs, paginated }) {
       <ul className={style.paginated}>
         {pageNumber?.map((number) => {
           return (
-            <li className={style.num} key={number}>
-              <a className={style.click} onClick={() => paginated(number)}>
-                {number}
-              </a>
+            <li
+              className={style.num}
+              key={number}
+              onClick={() => paginated(number)}
+            >
+              <a className={style.click}>{number}</a>
             </li>
           );
         })}

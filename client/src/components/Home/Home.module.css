@@ -78,21 +78,20 @@
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.599);
 }
 
-.div {
+/* .div {
   display: flex;
   justify-content: center;
   width: 100%;
   flex-direction: column;
   align-items: center;
   background: url("../../img/background_general.jpg");
-}
+} */
 
 @media screen and (max-width: 768px) {
   .filtros {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* border: 2px solid rgba(0, 0, 255, 0); */
   }
 
   .filtros select {
@@ -109,7 +108,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px green solid;
   }
   .div {
     background: rgb(209, 186, 158);
