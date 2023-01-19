@@ -8,7 +8,7 @@ import Detail from "./components/Detail/Detail";
 import axios from "axios";
 
 //axios.defaults.baseURL = "http://localhost:3001"; //servidor local
-axios.defaults.baseURL = "https://pi-backend-t1n0.onrender.com/"; //servidor deployado
+axios.defaults.baseURL = "https://pi-backend-t1n0.onrender.com"; //servidor deployado
 
 function App() {
   return (
